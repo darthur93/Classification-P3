@@ -2,17 +2,17 @@
 Overview \
 Business and Data Understanding\
   I am speaking to Wells of Life charity. We are proposing a model help predict the functionality of wells in Tanzania. As climate change decreases the stability of atmospheric systems, water has become increasingly important. Wells of Life is uniquely well suited to address the problem of water instability in Tanzania. Their primary locus of operation is located just to the north in Uganda.  The geographic proximity will make the deployment of resources comparitively cheap. We obtained a data set of wells in Tanzania to build a model.\
-  I took 
+  I took a data set that contain nearly 60,000 data points, with 41 columns. I got rid of a bunch of features. Id, recorded by, etc were removed because they would only serve to bias the models. Quality group, source type and most of the others were duplicates. A remaining few , like sheme name, were removed, becuase the data inputed was unclear or unhelpful.
 
 Modeling\
-I tried a variety of models to attempt to predict the functionality of the wells/
+I tried a variety of models to attempt to predict the functionality of the wells\
  The Dummy Model was just used as a baseline to evalute the other models.\ 
   Log Regression was remarably bad at predicting given this data set.\ 
   KNeighborsClassifier was an improvement over the log regression model, but its performance was underwhelming.\
   Decision Trees were very prone to overfitting. I compensated for this by using random forest classifiers.\ 
   Random Forests gave me my best model with an accuracy score of 80%\ 
   
-  Bagged Trees were another attempt to use decision trees, but they were less effective at the task i desired.\ 
+  Bagged Trees were another attempt to use decision trees, but they were less effective at the task I desired.\ 
   
   Ensemble models also failed to improve upon the performance of the random forest classifier.
   Gradient Boosting wwas another method I used to improve the decision trees, but it also fell short of the random forest classifer.\ 
@@ -29,8 +29,8 @@ README.md includes instructions for navigating the repository\
 
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── notebook.ipynb                         <- Concise summary of the project with all data science steps
-├── Project 3.pdf                       <- PDF version of project presentation
+├── notebook.ipynb                      <- Concise summary of the project with all data science steps
+├── Classification Slides.pdf           <- PDF version of project presentation
 ├── Data                                <- Both sourced externally and generated from code, includes exploratory notebooks
 └── Images                              <- Both sourced externally and generated from code
 ```  
